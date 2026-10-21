@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class CellPhoneApplication {
@@ -9,32 +10,39 @@ public class CellPhoneApplication {
         CellPhone newPhone = new CellPhone();
 
         System.out.print("What is the serial number?: " );
-        newPhone.setSerial(input.nextInt());
+        int serial = input.nextInt();
         input.nextLine();
+        newPhone.setSerial(serial);
 
         System.out.print("What model is the phone?: ");
-        newPhone.setModel(input.nextLine());
+        String model = input.nextLine();
+        newPhone.setModel(model);
 
         System.out.print("Who is the carrier?: ");
-        newPhone.setCarrier(input.nextLine());
+        String carrier = input.nextLine();
+        newPhone.setCarrier(carrier);
 
         System.out.print("What is the phone number?: ");
-        newPhone.setPhoneNumber(input.nextLine());
+        String phoneNumber = input.nextLine();
+        newPhone.setPhoneNumber(phoneNumber);
 
         System.out.print("Who is the owner of the phone?: ");
-        newPhone.setOwner(input.nextLine());
-        /*String owner = newPhone.getOwner();
+        String owner = input.nextLine();
+        newPhone.setOwner(owner);
+
+       /* String owner = newPhone.getOwner();
         String model = newPhone.getModel();
         String carrier = newPhone.getCarrier();
         int serialNumber = newPhone.getSerial();
-        String newPhoneNumber = newPhone.getPhoneNumber();*/
+        String newPhoneNumber = newPhone.getPhoneNumber();
+*/
 
-        System.out.println(newPhone.getOwner());
-        System.out.println(newPhone.getSerial());
-        System.out.println(newPhone.getModel());
-        System.out.println(newPhone.getPhoneNumber());
-        System.out.println(newPhone.getCarrier());
 
+        System.out.println("Serial number is: " + newPhone.getSerial());
+        System.out.println("Phone model is: " + newPhone.getModel());
+        System.out.println("Carrier is : " + newPhone.getCarrier());
+        System.out.println("Phone number is: " + newPhone.getPhoneNumber());
+        System.out.println("Phone owner is: " + newPhone.getOwner());
 
 
 
