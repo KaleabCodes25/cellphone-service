@@ -23,19 +23,17 @@ public class CellPhoneApplication {
 
         System.out.print("Who is the owner of the phone?: ");
         newPhone.setOwner(input.nextLine());
-
         /*String owner = newPhone.getOwner();
         String model = newPhone.getModel();
         String carrier = newPhone.getCarrier();
         int serialNumber = newPhone.getSerial();
-        String newPhoneNumber = newPhone.getPhoneNumber();
+        String newPhoneNumber = newPhone.getPhoneNumber();*/
 
-        System.out.println(owner);
-        System.out.println(model);
-        System.out.println(carrier);
-        System.out.println(serialNumber);
-        System.out.println(newPhoneNumber);
-*/
+        System.out.println(newPhone.getOwner());
+        System.out.println(newPhone.getSerial());
+        System.out.println(newPhone.getModel());
+        System.out.println(newPhone.getPhoneNumber());
+        System.out.println(newPhone.getCarrier());
 
 
 
