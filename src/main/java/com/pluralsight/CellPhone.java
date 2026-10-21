@@ -8,11 +8,11 @@ public class CellPhone {
     private String owner = " Dana Wyatt)";
 
     public CellPhone() {
-        this.serial = 0;
-        this.model = "";
-        this.carrier = "";
-        this.phoneNumber = "";
-        this.owner = "";
+        serial = 0;
+        model = "";
+        carrier = "";
+        phoneNumber = "";
+        owner = "";
     }
 
     public int getSerial() {
