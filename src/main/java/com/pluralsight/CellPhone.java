@@ -7,18 +7,30 @@ public class CellPhone {
     private String phoneNumber = " 800-555-5555";
     private String owner = " Dana Wyatt)";
 
+    public CellPhone() {
+        this.serial = 0;
+        this.model = "";
+        this.carrier = "";
+        this.phoneNumber = "";
+        this.owner = "";
+    }
+
     public int getSerial() {
         return serial;
     }
+
     public void setSerial(int serial) {
         this.serial = serial;
     }
+
     public String getModel() {
         return model;
     }
+
     public void setModel(String model) {
         this.model = model;
     }
+
     public String getCarrier() {
         return carrier;
     }
@@ -26,16 +38,22 @@ public class CellPhone {
     public void setCarrier(String carrier) {
         this.carrier = carrier;
     }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
     public String getOwner() {
         return owner;
     }
+
     public void setOwner(String owner) {
         this.owner = owner;
     }
 }
+
+
